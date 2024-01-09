@@ -1,9 +1,12 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    min-height: 100vh;
+    padding: 0;
+}
+
+header {
+    background-color: #1F2937;
+    padding: 5px 60px;
 }
 
 ul {
@@ -15,34 +18,58 @@ ul {
 }
 
 a {
-    font-size: 18px;
+    font-size: px;
     color: #E5E7EB;
     text-decoration: none;
 }
 
 .headerlogo {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     color: #f9faf8;
 }
 
 .nav {
     display: flex;
-    min-height: 60px;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
-    background: red;
 }
 
 .welcome {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    padding: 0 85px;
+    padding: 125px 15%;
     gap: 10px;
-    background: green;
+}
+
+.welcome .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.welcome .right {
+    flex-shrink: 0;
+    width: 50%;
+}
+
+.heromain {
+    color: #F9FAF8;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.herosecond {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+button {
+    width: 120px;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 3px;
 }
 
 .image {
@@ -54,19 +81,96 @@ a {
 }
 
 .content {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 900px;
+    color: #1F2937;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.card {
+    text-align: center;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+.square {
+    border: 4px solid #3882F6;
+    border-radius: 20px;
+    width: 160px;
+    height: 160px;
 }
 
 .quote {
-    background: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5e7eb;
     color: #1F2937;
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
+    padding: 100px 25%;
 }
 
-.bottom {
+.quotecm {
+    font-size: 36px;
+    font-weight: 100;
+    color: #1f2937;
+}
 
+.quotewho {
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1f2937;
+}
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 25%;
+}
+
+.discord {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #5865F2;
+    gap: 10px;
+    color: #F9FAF8;
+}
+
+.discord .left {
+    font-size: 30px;
+}
+
+.discord .subleft {
+    font-size: 18px;
+}
+
+.discord .right {
+    border: 2px solid #FFF;
+    background-color: #6a75ee;
+    color: #F9FAF8;
 }
 
 .footer {
@@ -76,10 +180,4 @@ a {
     height: 72px;
     background: #1F2937;
     color: #f9faf8;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    background: black;
 }
