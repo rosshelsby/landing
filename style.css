@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Vollkorn', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -7,18 +9,24 @@ body {
 header {
     background-image: url("paper.jpg");
     padding: 5px 60px;
+    background-size: 400px;
 }
 
-ul {
-    list-style-type: none;
+.links {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    gap: 16px;
+    gap: 10px;
+}
+
+.separator {
+    max-width: 45px;
 }
 
 a {
-    font-size: px;
+    font-size: 20px;
     color: #E5E7EB;
     text-decoration: none;
 }
@@ -39,7 +47,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 125px 15%;
+    padding: 125px 20%;
     gap: 10px;
 }
 
@@ -72,14 +80,6 @@ button {
     padding: 15px 3px;
 }
 
-.image {
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 215px;
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -95,9 +95,10 @@ h2 {
 .card-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    gap: 25px;
 }
 
 .card {
@@ -110,10 +111,13 @@ h2 {
 }
 
 .square {
-    border: 4px solid #3882F6;
+    border: 4px solid #1F2937;
     border-radius: 20px;
     width: 160px;
     height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .quote {
